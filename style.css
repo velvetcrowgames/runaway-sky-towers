@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #e02f2f; /* A bold red for the hero section */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero .game-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.google-play-badge {
+    width: 200px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.google-play-badge:hover {
+    transform: scale(1.05);
+}
+
+section {
+    background-color: white;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #e02f2f;
+    border-bottom: 2px solid #e02f2f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li strong {
+    color: #3b8b41; /* A contrasting green for the feature titles */
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 40px 0;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.image-gallery h3 {
+    margin-top: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-all-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #3b8b41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-all-button:hover {
+    background-color: #2e6e33;
+}
+
+.about-dev p.contact-info {
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+    .media-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .video-embed, .image-gallery {
+        flex: 1;
+    }
+}
